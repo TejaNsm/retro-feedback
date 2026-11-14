@@ -45,17 +45,20 @@ A lightweight tool where team members give weekly feedback on their own project.
 - SSO (Google, Microsoft, SAML)
 - Auto-generated summaries
 
-## 6. Open Questions
-- **Tech stack:** options under consideration:
-  - A. Next.js + Supabase (fastest to ship, RLS helps with anonymity)
-  - B. Django or Rails monolith (auth/admin/forms built in)
-  - C. React SPA + custom API (most control, most to build)
+## 6. Chosen Tech Stack
+- **Frontend:** React web app.
+- **Backend:** Node.js API.
+- **Database:** PostgreSQL.
+
+## 7. Open Questions
+- Which React and Node.js frameworks/libraries to use.
+- How to implement authentication and instant results updates.
 - Anonymity safeguards: minimum response threshold, comment attribution risks.
 - Edge cases: members leaving mid-project, roster changes, weeks with no responses, week-start changes mid-project.
 - Success metrics: how we will know the tool works (e.g. weekly participation rate).
 
-## 7. Suggested Next Steps
-1. Choose the tech stack.
-2. Define the data model (users, projects, roster, questions, submissions, weeks).
-3. Decide anonymity safeguards for small teams.
+## 8. Suggested Next Steps
+1. Define the data model (users, projects, roster, questions, submissions, weeks).
+2. Decide anonymity safeguards for small teams.
+3. Choose frameworks and libraries for the React app and Node.js API.
 4. Build the MVP: auth, project setup, submission form, results view.
